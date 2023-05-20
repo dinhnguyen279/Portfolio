@@ -784,7 +784,7 @@ main {
 .clients-list {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   margin: 0 -15px;
   padding: 25px;
@@ -802,7 +802,9 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  width: 75%;
+  height: 75%;
+  object-fit: fill;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -890,6 +892,9 @@ main {
 /**
  * skills 
  */
+.skill {
+  margin-bottom: 35px;
+}
 
 .skills-title {
   margin-bottom: 20px;
@@ -1348,9 +1353,9 @@ textarea.form-input::-webkit-resizer {
    * client
    */
 
-  .clients-item {
+  /* .clients-item {
     min-width: calc(33.33% - 10px);
-  }
+  } */
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1622,9 +1627,9 @@ textarea.form-input::-webkit-resizer {
     scroll-padding-inline: 45px;
   }
 
-  .clients-item {
+  /* .clients-item {
     min-width: calc(33.33% - 35px);
-  }
+  } */
 
   /**
    * #RESUME
@@ -1890,9 +1895,9 @@ textarea.form-input::-webkit-resizer {
 
   /* clients */
 
-  .clients-item {
+  /* .clients-item {
     min-width: calc(25% - 38px);
-  }
+  } */
 
   /**
    * PORTFOLIO
@@ -1905,7 +1910,6 @@ textarea.form-input::-webkit-resizer {
   /**
    * BLOG
    */
-
   .blog-banner-box {
     height: 230px;
   }
